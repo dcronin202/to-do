@@ -32,9 +32,7 @@ input {
     background: #f7f7f7;
     width: 100%;
     padding: 13px 13px 13px 20px;
-    /* This makes the input element the same width as the h1 & li elements: */
     box-sizing: border-box;
-    /* This gets rid of the annoying default border: */
     border: 3px solid rgba(0,0,0,0);
 }
 
@@ -57,7 +55,6 @@ li {
     line-height: 40px;
 }
 
-/* This makes every other line a different color. If we had done "3n", every third line would be a different color. */
 li:nth-child(2n){  
     background: #f7f7f7;
 }
@@ -74,12 +71,11 @@ span {
     margin-right: 20px;
     text-align: center;
     width: 0;
-    display: inline-block;  /* This makes it fit the li dimensions */
-    transition: 0.25s linear;  /* This is how we add the duration of the sliding animation */
-    opacity: 0;  /* This hides the trash icon when we're not hovered over it */
+    display: inline-block;  
+    transition: 0.25s linear;  
+    opacity: 0; 
 }
 
-/* This is how we add the trash animation when we hover over a list item */
 li:hover span{
     width: 40px;
     opacity: 1.0;
